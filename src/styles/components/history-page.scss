@@ -1,0 +1,156 @@
+.history {
+  $this: &;
+
+  background: $grey-light;
+
+  &__search-result {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    //position: fixed;
+    //z-index: 9990;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -40%);
+    font-size: 14px;
+    line-height: 16px;
+
+    @media (max-width: 767px) {
+      padding: 25px 15px;
+    }
+  }
+
+  &__search-result-loading {
+    margin: -8px 0 0 -10px;
+    position: absolute;
+    left: 50%;
+  }
+
+  &__search-result-transactions-wrapper {
+    //width: calc(100% + 15px);
+    //padding-right: 15px;
+    box-sizing: border-box;
+    //overflow-y: auto;
+    //max-height: 220px;
+  }
+
+  &__search-result-top {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $grey-light;
+
+    @media (max-width: 767px) {
+      padding-bottom: 0;
+      margin-bottom: 20px;
+      font-size: 13px;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__search-result-top-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__search-result-top-data {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &__search-result-label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__search-result-top-value {
+    font-weight: 500;
+    padding: 8px 0 24px;
+
+    &.balance {
+      font-size: 26px;
+      line-height: 29px;
+      padding: 0;
+
+      @media (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__search-result-top-value-balance {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 40px;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      line-height: 24px;
+    }
+  }
+
+  &__search-result-transactions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+    &.in {
+      #{$this}__search-result-transaction-value {
+        b {
+          color: $green;
+        }
+      }
+    }
+
+    &.out {
+      #{$this}__search-result-transaction-value {
+        b {
+          color: $pink;
+        }
+      }
+    }
+  }
+
+  &__search-result-transaction-amount {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+  }
+
+  &__search-result-transaction-value {
+    font-size: 14px;
+    line-height: 16px;
+
+    b {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  &__search-result-transaction-info {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__search-result-transaction-icon {
+    margin-right: 10px;
+  }
+
+  &__search-errors {
+    color: #f00;
+  }
+
+  &__search-result-link {
+    color: $pink;
+  }
+}

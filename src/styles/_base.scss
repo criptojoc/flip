@@ -1,0 +1,36 @@
+/*
+Application Settings Go Here
+------------------------------------
+This file acts as a bundler for all variables/mixins/themes, so they
+can easily be swapped out without `core.scss` ever having to know.
+
+For example:
+
+@import './variables/colors';
+@import './variables/components';
+@import './themes/default';
+*/
+@import './includes/variables';
+@import './includes/colors';
+@import './includes/typography';
+@import './includes/mixins';
+@import './includes/basic';
+
+@import './components/app-header';
+@import './components/app-footer';
+@import './components/info';
+@import './components/main-page';
+@import './components/concept-page';
+@import './components/terms-page';
+@import './components/circulation-page';
+@import './components/howtouse-page';
+@import './components/system-params-page';
+@import './components/history-page';
+@import './components/concurs-page';
+@import './components/explorer';
+@import './components/vub';
+@import './components/concurs-popup';
+@import './components/statistics';
+@import './components/odometer';
+@import './components/news';
+@import './components/game';

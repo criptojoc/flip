@@ -1,0 +1,111 @@
+.concept {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 100px;
+  }
+
+  &__menu {
+    position: sticky;
+    align-self: flex-start;
+    top: 20px;
+    flex: 0 0 220px;
+    list-style: none;
+    padding: 0;
+    margin: 0 80px 0 0;
+
+    @media (max-width: 992px) {
+      margin-right: 40px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    img {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 34px;
+      margin: 15px 0;
+    }
+  }
+
+  &__item {
+    padding-bottom: 30px;
+
+    a {
+      font-weight: bold;
+      color: $pink;
+      text-decoration: none;
+    }
+
+    .green {
+      color: $green;
+    }
+  }
+
+  &__info {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 24px 40px;
+    box-sizing: border-box;
+    border: 2px solid #3DC5AC;
+    position: relative;
+    border-radius: 10px;
+    margin: 50px 0 20px;
+  }
+
+  &__info-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(16px, -32px);
+  }
+
+  &__menu-item {
+    padding-left: 20px;
+    margin: 10px 0;
+    border-left: 4px solid transparent;
+
+    span {
+      cursor: pointer;
+      display: inline-block;
+      font-weight: bold;
+      padding: 2px 0;
+      color: $black;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color .15s ease-in-out;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+
+    &.active {
+      border-color: $pink;
+
+      span {
+        color: $pink;
+      }
+    }
+  }
+}

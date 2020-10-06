@@ -1,0 +1,220 @@
+.main-page {
+  &__page-line {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  &__page-line-icon {
+    width: 105vw;
+  }
+
+  &__account {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+  }
+
+  &__account-content {
+    max-width: 420px;
+  }
+
+  &__account-label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $pink;
+  }
+
+  &__account-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    margin: 20px 0;
+  }
+
+  &__account-description {
+    margin-bottom: 30px;
+
+    b {
+      font-weight: normal;
+      color: $pink;
+    }
+  }
+
+  &__account-buttons {
+    margin: 25px 0 15px;
+
+    @media (max-width: 640px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__account-button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 32px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    background: $grey-light;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all .15s ease-in-out;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #fff;
+      background: $pink;
+    }
+
+    &.active {
+      background: $black;
+      color: #fff;
+    }
+
+    @media (max-width: 640px) {
+      margin: 0 0 12px;
+    }
+  }
+
+  &__account-image,
+  &__persons-image {
+    flex: 0 0 350px;
+    width: 350px;
+    position: relative;
+    line-height: 0;
+
+    @media (max-width: 992px) {
+      flex: 0 0 250px;
+      width: 250px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 295px;
+      height: 604px;
+      top: 2px;
+      right: 10px;
+      border-radius: 50px;
+      box-shadow: -15px 21px 24px rgba(62, 42, 52, 0.09), -50px 34px 144px rgba(62, 42, 52, 0.15);
+
+      @media (max-width: 992px) {
+        width: 200px;
+        height: 400px;
+      }
+    }
+  }
+
+  &__persons-image {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 295px;
+      height: 604px;
+      top: 2px;
+      right: 50px;
+      border-radius: 50px;
+      box-shadow: -15px 21px 24px rgba(62, 42, 52, 0.09), -50px 34px 144px rgba(62, 42, 52, 0.15);
+
+      @media (max-width: 992px) {
+        width: 200px;
+        height: 400px;
+      }
+    }
+  }
+
+  &__account-image {
+    @media (max-width: 750px) {
+      display: none;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      width: 350px;
+
+      @media (max-width: 992px) {
+        width: 250px;
+      }
+    }
+  }
+
+  &__persons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  &__persons-image-wrap {
+    margin-left: -30px;
+    position: relative;
+  }
+
+  &__persons-image {
+
+    &:before {
+      height: 420px;
+    }
+  }
+
+  &__persons-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 18px;
+    margin-bottom: 64px;
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__persons-image-mobile {
+    position: relative;
+    z-index: 1;
+    width: 410px;
+    margin-left: -40px;
+  }
+
+  &__persons-logo {
+    position: absolute;
+    left: -90px;
+    top: 50px;
+
+    svg {
+      width: 52px;
+      height: 52px;
+      border-radius: 100px;
+    }
+  }
+}

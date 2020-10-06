@@ -1,0 +1,32 @@
+<svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0)">
+        <path d="M15.6961 8.53367L0.901503 0.0779014C0.715596 -0.0300446 0.481713 -0.0240476 0.301803 0.0838984C0.115896 0.191844 0.00195312 0.383748 0.00195312 0.599641C0.00195312 0.599641 0.00795013 1.37925 0.0139471 2.66261L10.7906 13.4392L15.6961 8.53367Z" fill="url(#gp-paint0_linear)"/>
+        <path d="M0.013916 2.6627C0.031907 7.29241 0.08588 18.5309 0.109868 24.1261L10.7965 13.4394L0.013916 2.6627Z" fill="url(#gp-paint1_linear)"/>
+        <path d="M24.1637 13.3733L15.6959 8.53378L10.7844 13.4393L16.3256 18.9805L24.1697 14.4108C24.3556 14.3029 24.4695 14.105 24.4695 13.8951C24.4695 13.6792 24.3496 13.4813 24.1637 13.3733Z" fill="url(#gp-paint2_linear)"/>
+        <path d="M0.10376 24.126C0.115754 26.123 0.121751 27.4004 0.121751 27.4004C0.121751 27.6163 0.235694 27.8142 0.421601 27.9162C0.607508 28.0241 0.835394 28.0241 1.0213 27.9162L16.3316 18.9866L10.7904 13.4453L0.10376 24.126Z" fill="url(#gp-paint3_linear)"/>
+    </g>
+    <defs>
+        <linearGradient id="gp-paint0_linear" x1="0.00195312" y1="6.72222" x2="15.6989" y2="6.72222" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#63BE6B"/>
+            <stop offset="0.506" stop-color="#5BBC6A"/>
+            <stop offset="1" stop-color="#4AB96A"/>
+        </linearGradient>
+        <linearGradient id="gp-paint1_linear" x1="0.0110375" y1="13.397" x2="10.7903" y2="13.397" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3EC6F2"/>
+            <stop offset="1" stop-color="#45AFE3"/>
+        </linearGradient>
+        <linearGradient id="gp-paint2_linear" x1="10.7902" y1="13.761" x2="24.4681" y2="13.761" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FAA51A"/>
+            <stop offset="0.387" stop-color="#FAB716"/>
+            <stop offset="0.741" stop-color="#FAC412"/>
+            <stop offset="1" stop-color="#FAC80F"/>
+        </linearGradient>
+        <linearGradient id="gp-paint3_linear" x1="0.106398" y1="20.721" x2="16.3314" y2="20.721" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#EC3B50"/>
+            <stop offset="1" stop-color="#E7515B"/>
+        </linearGradient>
+        <clipPath id="gp-clip0">
+            <rect width="24.472" height="28" fill="white" transform="translate(-0.000244141)"/>
+        </clipPath>
+    </defs>
+</svg>

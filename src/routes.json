@@ -1,0 +1,12 @@
+{
+  "index": "/",
+  "concept": "/concept",
+  "terms": "/terms-of-use",
+  "circulation": "/circulation",
+  "howtouse": "/how-to-use",
+  "systemParams": "/system-params",
+  "concurs": "/concurs",
+  "history": "/history/:address",
+  "explorer": "/explorer",
+  "vub": "/vub"
+}

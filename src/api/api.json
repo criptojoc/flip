@@ -1,0 +1,7 @@
+{
+    "summary": "https://app.cryptomdl.com/api/v1/summary",
+    "stats": "https://app.cryptomdl.com/api/v1/games/dice/stats",
+    "transfers": "https://app.cryptomdl.com/api/v1/transfers",
+    "explorer": "https://app.cryptomdl.com/api/v1/explorer",
+    "dice": "https://app.cryptomdl.com/api/v1/games/dice/results"
+}
