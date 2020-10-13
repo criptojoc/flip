@@ -130,7 +130,7 @@ class MainPage extends Component {
             <div className="game__concept-wrapper">
               <div className="game__concept-item">
                 <span className="game__concept-item-num">1</span>
-                Trimite o sumă spre adresa
+                Trimite o sumă (max. 50 000 cMDL) spre adresa
                 <br/>
                 <span className="game__concept-highlight small">0x71E9558b9F0643CD730B<br/>73b33911465E2F79DbE2</span>
                 <p>
