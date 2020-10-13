@@ -559,8 +559,13 @@
 
   &__transactions-header-stats {
     display: flex;
-    width: 300px;
+    width: 500px;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &__transactions-header-stats-item {
@@ -579,6 +584,11 @@
     text-transform: uppercase;
     color: $green;
     padding-bottom: 4px;
+
+    @media (max-width: 767px) {
+      text-align: left;
+      margin-top: 12px;
+    }
   }
 
   &__transactions-header-stats-item-value {
@@ -588,6 +598,10 @@
 
     svg {
       margin-right: 6px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
     }
   }
 }

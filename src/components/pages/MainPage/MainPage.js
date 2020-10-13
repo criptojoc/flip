@@ -93,7 +93,6 @@ class MainPage extends Component {
     });
   };
 
-
   render() {
     const { stats, loading, searchData, limit, page, isCopied } = this.state;
 
@@ -131,7 +130,7 @@ class MainPage extends Component {
             <div className="game__concept-wrapper">
               <div className="game__concept-item">
                 <span className="game__concept-item-num">1</span>
-                Trimite o sumă (max. 50 000 cMDL) spre adresa
+                Trimite o sumă spre adresa
                 <br/>
                 <span className="game__concept-highlight small">0x71E9558b9F0643CD730B<br/>73b33911465E2F79DbE2</span>
                 <p>
@@ -180,6 +179,12 @@ class MainPage extends Component {
                   <div className="game__transactions-header-stats-item-value">{stats ? <Odometer value={stats.count_games} format="(,ddd)" />  : ''}</div>
                 </div>
                 <div className="game__transactions-header-stats-item">
+                  <div className="game__transactions-header-stats-item-label">Soldul jocului</div>
+                  {stats && <div className="game__transactions-header-stats-item-value">
+                    <Odometer value={stats.game_balance} format="(,ddd)" />
+                  </div>}
+                </div>
+                <div className="game__transactions-header-stats-item">
                   <div className="game__transactions-header-stats-item-label">TOTAL cîstigat</div>
                   <div className="game__transactions-header-stats-item-value">
                     <LogoSmallIcon />
@@ -212,16 +217,18 @@ class MainPage extends Component {
                         <td><a href={`https://criptoleu.com/history/${player_address}`} target='_blank' rel="noopener noreferrer" className="game__table-address">{player_address.substring(0, 16)}...</a></td>
                         <td>{(player_amount.toFixed(2))} cMDL</td>
                         <td>
-                            <div className={classNames("game__number", [ win ? " win" : "loose"])}>
-                              {random_number}
-                            </div>
+                          {random_number && <div className={classNames("game__number", [ win ? " win" : "loose"])}>
+                            {random_number}
+                          </div>}
                         </td>
                         <td>
-                          <span className={classNames("game__sum-result", [ win ? " win" : "loose"])}>
+                          {win === null ? <span>Returnat&nbsp; <span className='game__sum-result loose'>>50 000 cMDL </span></span>
+                          : <span className={classNames("game__sum-result", [ win ? " win" : "loose"])}>
                             {win ? "+" : ""}
 
-                            {win ? (prize_amount.toFixed(2)) : (prize_amount.toFixed(2))} cMDL
+                              {win ? (prize_amount.toFixed(2)) : (prize_amount.toFixed(2))} cMDL
                           </span>
+                          }
                         </td>
                       </tr>
                     ))}
